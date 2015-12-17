@@ -5,7 +5,7 @@ MAINTAINER Maslino <liuxionghust@gmail.com>
 RUN mkdir /app
 WORKDIR /app
 COPY . /app
-RUN mv /app/etc/sources.list /etc/apt/sources.list
+#RUN mv /app/etc/sources.list /etc/apt/sources.list
 
 # Install packages
 RUN apt-get update && apt-get install -y \
