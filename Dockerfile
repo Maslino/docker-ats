@@ -28,6 +28,6 @@ RUN wget http://archive.apache.org/dist/trafficserver/trafficserver-6.0.0.tar.bz
 
 RUN mv /app/etc/records.config /usr/local/etc/trafficserver/records.config && ldconfig
 
-EXPOSE 8080
+EXPOSE 80
 
 CMD traffic_server
